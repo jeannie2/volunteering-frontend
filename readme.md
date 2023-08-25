@@ -8,5 +8,4 @@ This project was made using Puppeteer, React, React Three Fiber (Three.js), Expr
 
 ## How to use
 
-View deployed project at: https://s5n.co.
-To run locally, git clone with the frontend version https://github.com/jeannie2/mern-url-shortener-frontend.
+To run locally, git clone and run using "npm run dev", also git clone the backend version https://github.com/jeannie2/web-scraped-volunteering-backend
