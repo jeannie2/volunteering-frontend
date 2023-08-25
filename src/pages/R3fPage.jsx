@@ -15,8 +15,8 @@ const R3fPage  = () => {
 
   const fetchData = async () => {
     try {
-      // const response = await fetch('http://localhost:8000/proxy-endpoint')
-      const response = await fetch('https://web-scraped-volunteering-backend.vercel.app/proxy-endpoint')
+      const response = await fetch('http://localhost:8000/proxy-endpoint')
+      // const response = await fetch('https://web-scraped-volunteering-backend.vercel.app/proxy-endpoint')
       const jsonData = await response.json()
       setData(jsonData)
       console.log(jsonData)
