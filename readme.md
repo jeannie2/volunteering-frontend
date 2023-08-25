@@ -1,6 +1,6 @@
-# Scraping volunteering opportunities using Puppeteer
+# Volunteering opportunities for web developers
 
-A simple project that scrapes data from various volunteering platforms.
+A simple web scraping project using data from various volunteering platforms.
 
 ## Technologies
 
