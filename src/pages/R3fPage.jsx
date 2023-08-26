@@ -17,8 +17,8 @@ const R3fPage  = () => {
     try {
       // const response = await fetch('http://localhost:8000/proxy-endpoint')
       // const response = await fetch('https://web-scraped-volunteering-backend-production.up.railway.app/proxy-endpoint')
-      const response = await fetch('https://volunteering-backend.up.railway.app/proxy-endpoint')
-      // const response = await fetch('https://web-scraped-volunteering-backend.vercel.app/proxy-endpoint')
+      // const response = await fetch('https://volunteering-backend.up.railway.app/proxy-endpoint')
+      const response = await fetch('https://web-scraped-volunteering-backend.vercel.app/proxy-endpoint')
       // const response = await fetch('https://web-scraped-volunteering-backend-production.up.railway.app')
       const jsonData = await response.json()
       setData(jsonData)
