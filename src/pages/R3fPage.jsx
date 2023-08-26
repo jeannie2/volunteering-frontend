@@ -66,7 +66,7 @@ const MyDivs = () => {
 
   return (
     <group ref={groupRef}>
-      {data.map((item, index) => (
+      {data?.map((item, index) => (
         <MyComponent key={index} title={item.title} description={item.description} source={item.source} onClick={(item)=>window.location.href=item.opportunityLink} />
       ))}
     </group>
