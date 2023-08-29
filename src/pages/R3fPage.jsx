@@ -18,12 +18,7 @@ const R3fPage  = () => {
     try {
       setLoading(true)
       // const response = await fetch('http://localhost:8080/proxy-endpoint')
-
-      // const response = await fetch('https://web-scraped-volunteering-backend-production.up.railway.app/proxy-endpoint')
-      // const response = await fetch('https://volunteering-backend.up.railway.app/proxy-endpoint')
-      // const response = await fetch('https://web-scraped-volunteering-backend.vercel.app/proxy-endpoint')
-      // const response = await fetch('https://web-scraped-volunteering-backend-production.up.railway.app')
-      const response = await fetch('https://volunteering-backend.vercel.app/proxy-endpoint')
+      const response = await fetch('https://volunteering-backend.vercel.app/proxy-endpoint') // need https or doesnt work
       const jsonData = await response.json()
       setData(jsonData)
       console.log(jsonData)
@@ -75,7 +70,7 @@ const MyDivs = () => {
     </group>
   )
 }
-// MyComponent oonClick={(item)=>window.location.href=item.opportunityLink}
+// MyComponent onClick={(item)=>window.location.href=item.opportunityLink}
 
   return (
     <>
