@@ -1,6 +1,6 @@
 # Volunteering opportunities for web developers
 
-A simple web scraping project using data from various volunteering platforms
+A simple web scraping project displaying data from various volunteering platforms (opportunities for web developers). Users can also click each item to learn more
 
 ## Technologies
 
