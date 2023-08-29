@@ -35,7 +35,7 @@ const MyComponent = ({ title, description, opportunityLink, source }) => {
 
   return (
     <Plane args={[4, 4]} onClick={handleClick}>
-      <meshPhysicalMaterial color="red" roughness={0.1} metalness={0.9} side={THREE.DoubleSide} />
+      <meshPhysicalMaterial color="white" roughness={0.1} metalness={0.9} side={THREE.DoubleSide} />
       <Text position={[0, 0, 0.001]} fontSize={0.18} color="white" maxWidth={3} maxHeight={3} wrap="WordWrap" frustumCulled={false}>
         Task: {title} {'\n'}
         Organization: {description} {'\n'}
@@ -74,21 +74,22 @@ const MyDivs = () => {
 
   return (
     <>
-    <Canvas camera={{ position: [-35, 5, 20], fov: 25 }} style={{ background: 'grey' }}
+    <Canvas camera={{ position: [-35, 5, 20], fov: 25 }} style={{ background: 'white' }}
       gl={{ logarithmicDepthBuffer: true, antialias: false }}
       dpr={[1, 1.5]}
       shadows
     >
-      <spotLight angle={1} color="white" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
-      <spotLight angle={1} color="white" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
+      <spotLight angle={1} color="green" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
+      <spotLight angle={1} color="red" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
+      <spotLight angle={1} color="purple" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
 
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <ambientLight />
-      <spotLight angle={1} color="white" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
-      <spotLight angle={1} color="white" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
+      <spotLight angle={1} color="lightblue" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
+      <spotLight angle={1} color="yellow" penumbra={1} position={[0, 25, 5]} shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} castShadow />
       <Float>
         {loading ? <Loader /> : <MyDivs />}
         </Float>
@@ -100,10 +101,10 @@ const MyDivs = () => {
           scale={[10, 5]} // Scale it any way you prefer (optional = [1, 1])
           target={[0, 0, 0]} // Target position (optional = undefined)
         />
-        <Lightformer form="circle" color="pink" intensity={1} rotation-y={Math.PI / 2} position={[20, 2, 0]} scale={[100, 2, 1]} />
-        <Lightformer form="circle" color="white" intensity={1} rotation-y={-Math.PI / 2} position={[50, 2, 0]} scale={[100, 2, 1]} />
-        <Lightformer form="ring" color="blue" intensity={1} scale={2} position={[10, 5, 10]} onUpdate={(self) => self.lookAt(0, 0, 0)} />
-        <Lightformer form="ring" color="aqua" intensity={1} scale={2} position={[-10, -5, 10]} onUpdate={(self) => self.lookAt(0, 0, 0)} />
+        <Lightformer form="circle" color="lime" intensity={0.5} rotation-y={Math.PI / 2} position={[20, 2, 0]} scale={[100, 2, 1]} />
+        <Lightformer form="circle" color="purple" intensity={0.5} rotation-y={-Math.PI / 2} position={[50, 2, 0]} scale={[100, 2, 1]} />
+        <Lightformer form="ring" color="blue" intensity={0.5} scale={2} position={[10, 5, 10]} onUpdate={(self) => self.lookAt(0, 0, 0)} />
+        <Lightformer form="ring" color="aqua" intensity={0.5} scale={2} position={[-10, -5, 10]} onUpdate={(self) => self.lookAt(0, 0, 0)} />
     </Environment>
     <OrbitControls />
   </Canvas>
