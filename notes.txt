@@ -1,1 +1,3 @@
 - images
+- animated loader
+- didnt work one time...
